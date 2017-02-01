@@ -1,5 +1,5 @@
 body {
-    background-color: lightskyblue;
+    background-color: lightgrey;
 }
 main {
     width: 80%;
@@ -26,6 +26,7 @@ input[type=text] {
     border-radius: 50%;
     box-sizing: border-box;
     font-size: 32px;
+    background-color: lightslategray;
 }
 
 #input {
@@ -33,6 +34,7 @@ input[type=text] {
     height: 40px;
     margin: 20px;
     font-size: 20px;
+    background-color: lightgrey;
 }
 
 button {
@@ -40,4 +42,17 @@ button {
     color: white;
     width: 200px;
     height: 40px;
+}
+
+#count1,
+#count2,
+#count3,
+#count4 {
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    font-size: 2vw;
+    visibility: hidden;
 }
