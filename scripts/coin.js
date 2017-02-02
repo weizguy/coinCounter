@@ -25,6 +25,11 @@ function calculate() {
     document.getElementById("coin1").value = coins[2];
     document.getElementById("coin2").value = coins[1];
     document.getElementById("coin3").value = coins[0];
+    // reassign coins so counters work right
+    coin1 = document.getElementById("coin1").value;
+    coin2 = document.getElementById("coin2").value;
+    coin3 = document.getElementById("coin3").value;
+    coin4 = document.getElementById("coin4").value;
     // hide the counters
     document.getElementById("count1").style.visibility = "hidden";
     document.getElementById("count2").style.visibility = "hidden";
