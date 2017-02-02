@@ -1,0 +1,91 @@
+body {
+    background-color: lightgrey;
+}
+main {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin: auto;
+    display: block;
+    position: relative;
+}
+
+header {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    width: 70%;
+    margin: auto;
+}
+
+input[type=text] {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin: 5px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    box-sizing: border-box;
+    font-size: 18px;
+    background-color: lightslategray;
+}
+
+#input {
+    border-radius: 5px;
+    height: 40px;
+    font-size: 20px;
+    width: 100%;
+    background-color: lightgrey;
+}
+
+button {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 45px;
+    font-size: 10px;
+    margin-left: 5px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+}
+
+#coin1,
+#coin2,
+#coin3,
+#coin4 {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+#count1,
+#count2,
+#count3,
+#count4 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    left: 40px;
+    top: -10px;
+    cursor: not-allowed;
+    visibility: hidden;
+}
+
+.center {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
