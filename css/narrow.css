@@ -38,6 +38,11 @@ input[type=text] {
     font-size: 18px;
     background-color: lightslategray;
 }
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 
 #input {
     border-radius: 5px;
