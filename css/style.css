@@ -23,7 +23,8 @@ footer {
     margin: auto;
 }
 
-input[type=text] {
+input[type=number],
+input[type=text]{
     width: 150px;
     height: 150px;
     padding: 20px;
@@ -64,6 +65,10 @@ button {
     position: relative;
     left: 0;
     top: 0;
+}
+
+#coin4 {
+    cursor: not-allowed;
 }
 
 #count1,
