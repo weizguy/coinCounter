@@ -9,12 +9,12 @@ function calculate() {
     determines which coins are needed and counts how many of
     each are needed, then displays them in the counters
      */
-    var n = document.getElementById("input").value;
+    var n = Number(document.getElementById("input").value);
     // get the initial value for the coins
-    var coin1 = document.getElementById("coin1").value;
-    var coin2 = document.getElementById("coin2").value;
-    var coin3 = document.getElementById("coin3").value;
-    var coin4 = document.getElementById("coin4").value;
+    var coin1 = Number(document.getElementById("coin1").value);
+    var coin2 = Number(document.getElementById("coin2").value);
+    var coin3 = Number(document.getElementById("coin3").value);
+    var coin4 = Number(document.getElementById("coin4").value);
     // Place numbers into array to sort
     var coins = [coin1, coin2, coin3];
     // sort the coins (in case of changing out of order)
@@ -26,10 +26,10 @@ function calculate() {
     document.getElementById("coin2").value = coins[1];
     document.getElementById("coin3").value = coins[0];
     // reassign coins so counters work right
-    coin1 = document.getElementById("coin1").value;
-    coin2 = document.getElementById("coin2").value;
-    coin3 = document.getElementById("coin3").value;
-    coin4 = document.getElementById("coin4").value;
+    coin1 = Number(document.getElementById("coin1").value);
+    coin2 = Number(document.getElementById("coin2").value);
+    coin3 = Number(document.getElementById("coin3").value);
+    coin4 = Number(document.getElementById("coin4").value);
     // hide the counters
     document.getElementById("count1").style.visibility = "hidden";
     document.getElementById("count2").style.visibility = "hidden";
@@ -38,6 +38,7 @@ function calculate() {
     // set the counters to 0
     var count1 = 0, count2 = 0, count3 = 0, count4 = 0;
     // perform the loop to count how many of each coin is needed
+
     while (n != 0) {
         if (n >= coin1) {
             count1 += 1;
